@@ -18,11 +18,9 @@ for (let i = 1; i <= n; i++){
     } else {
         numeros.push(i);
     };
-    alert(i)
 }
-alert(numeros);
+document.querySelector("#saida").textContent = numeros;
 numeros = [];
 }
 
-//document.querySelector("#saida").textContent = numeros;
 document.querySelector("#btnExecutar").addEventListener("click",q1);
