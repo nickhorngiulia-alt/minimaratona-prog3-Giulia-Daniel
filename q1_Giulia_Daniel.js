@@ -4,17 +4,13 @@ function q1(){
     let n = parseInt(document.querySelector("#campo").value);
 for (let i = 1; i <= n; i++){
     if (i % 3 == 0 && i % 5 == 0){
-        m5e3 = "FizzBuzz"
-        numeros.push(m5e3);
+        numeros.push("FizzBuzz");
     } else if (i % 3 == 0){
-        let m3 = "Fizz"
-        numeros.push(m3);
+        numeros.push("Fizz");
      } else if (i % 5 == 0) {
-        let m5 = "Buzz"
-        numeros.push(m5);
+        numeros.push("Buzz");
     } else if (i % 7 == 0){
-        m7 = "boom";
-        numeros.push(m7);
+        numeros.push("boom");
     } else {
         numeros.push(i);
     };
