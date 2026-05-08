@@ -2,14 +2,17 @@ function contador(){
     let frase = document.querySelector("#campo").value;
     let vetorFrase = frase.split(" ");
     let totalPalavras = vetorFrase.length;
-    let VetorPalavra = [];
-    let maisCurta = "";
+    let maisCurta = vetorFrase[0];
     let maisLonga = "";
     for(let i = 0; i  < vetorFrase.length; i++){
-        let palavra = vetorFrase[i].split("");
-        //let letras = palavra.length;
-        
-        
+        let palavra = vetorFrase[i];
+        let letras = palavra.split("").length;
+        if (maisCurta.split("").length > letras){
+            maisCurta = palavra;
+        }
+        if (maisLonga.split("").length < letras){
+            maisLonga = palavra;
+        }
     }
     
     document.querySelector("#saida").innerHTML = `Total de Palavras: ${totalPalavras} <br>
